@@ -22,6 +22,68 @@ Computatinal Task
 | 8 | 48 |
 | 10 | 45 |
 
+The methods used include the central difference method for derivatives and Simpson’s Rule (with trapezoidal correction) for integration.
+
+Summary of Results
+
+## Temperature Gradient
+| Position (cm) | dT/dx (°C/cm))  |
+|:---:|:---:|
+| 2 | -8.75 |
+| 4 | -6.25 |
+| 6 | -4.25 |
+| 8 | -2.50 |
+
+The gradient is negative at all points, indicating that temperature decreases as distance from the heat source increases.
+
+## Total Heat Distribution
+The total heat along the rod (from 0 cm to 10 cm) was approximated as:
+TOTAL HEAT ≈ 638.33
+This value represents the area under the temperature curve, indicating the overall thermal energy distribution.
+
+## Graphical Interpretation
+Two graphs were generated:
+
+•	Temperature vs Position
+
+o	Shows a decreasing curve that gradually flattens
+
+•	Gradient vs Position
+
+o	Shows decreasing magnitude of slope as distance increases
+
+These graphs visually confirm the numerical findings.
+
+## Analysis of Heat Diffusion Behavior
+1. Where is heat transfer fastest?
+Heat transfer (in this simplified interpretation) is fastest where the magnitude of the gradient |dT/dx| is largest.
+From the computed gradient values:
+At x = 2 cm,
+dT/dx≈−8.75 °C/cm
+This is the largest magnitude gradient among the interior points, indicating the steepest temperature drop.
+Therefore, heat transfer is fastest near the heated end, particularly around 2 cm, and likely even closer to 0 cm (though endpoint gradients were not computed).
+
+2. Does temperature decrease linearly?
+No, the temperature does not decrease linearly.
+If the temperature profile were linear:
+•	The gradient would remain constant
+However, the computed gradients show:
+−8.75→−6.25→−4.25→−2.50
+This clearly indicates:
+•	The slope is changing
+•	The curve is nonlinear
+The temperature profile flattens as distance increases, which is characteristic of diffusion processes.
+
+3. What happens farther from the heat source?
+As we move farther from the heat source (toward 10 cm), the temperature decreases more gradually, causing the curve to flatten and the magnitude of the gradient to decrease. This indicates that the temperature becomes less sensitive to changes in position and that heat transfer slows down. Such behavior is consistent with diffusion phenomena, where the influence of the heat source weakens as the distance increases.
+
+## Conclusion
+
+The numerical analysis shows that heat transfer is strongest near the source and gradually weakens along the rod, the temperature distribution is nonlinear rather than uniform, and the system follows typical diffusion behavior in which temperature gradients decrease with distance, while numerical methods such as the central difference and Simpson’s Rule prove to be effective tools for analyzing physical systems using discrete data.
+
+
+
+
 
 # Case Study 5: Electricity Consumption and Power Analysis
 
