@@ -1,5 +1,21 @@
-# CompSci-Finals-Activity1-GROUP_2
+# CompSci-Finals-Activity1-GROUP_2_GULENG-HADJINOR-RICO
 
+# Case Study 3: Diffusion Process Simulation (Heat Spread)
+
+## Overview
+A metal rod is heated at one end. Engineers want to estimate how heat spreads along the rod over time using discrete 
+measurements. 
+
+## Given Data
+
+| Position (cm) | Temperature (°C)  |
+|:---:|:---:|
+| 0 | 100 |
+| 2 | 80 |
+| 4 | 65 |
+| 6 | 55 |
+| 8 | 48 |
+| 10 | 45 |
 
 
 # Case Study 5: Electricity Consumption and Power Analysis
