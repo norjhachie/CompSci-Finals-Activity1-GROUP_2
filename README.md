@@ -24,7 +24,7 @@ Computatinal Task
 
 The methods used include the central difference method for derivatives and Simpson’s Rule (with trapezoidal correction) for integration.
 
-Summary of Results
+# SUMMARY OF RESULTS
 
 ## Temperature Gradient
 | Position (cm) | dT/dx (°C/cm))  |
