@@ -74,7 +74,7 @@ However, the computed gradients show:
 
 This clearly indicates: The slope is changing and The curve is nonlinear. The temperature profile flattens as distance increases, which is characteristic of diffusion processes.
 
-4. What happens farther from the heat source?
+3. What happens farther from the heat source?
 As we move farther from the heat source (toward 10 cm), the temperature decreases more gradually, causing the curve to flatten and the magnitude of the gradient to decrease. This indicates that the temperature becomes less sensitive to changes in position and that heat transfer slows down. Such behavior is consistent with diffusion phenomena, where the influence of the heat source weakens as the distance increases.
 
 ## Conclusion
