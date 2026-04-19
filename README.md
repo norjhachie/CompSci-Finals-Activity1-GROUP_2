@@ -44,13 +44,15 @@ This value represents the area under the temperature curve, indicating the overa
 ## Graphical Interpretation
 Two graphs were generated:
 
-•	Temperature vs Position
+# Temperature vs Position
+Shows a decreasing curve that gradually flattens
 
-o	Shows a decreasing curve that gradually flattens
+<img width="640" height="480" alt="Temperature vs Position" src="https://github.com/user-attachments/assets/bc2c23cd-70a1-4ceb-b1ea-9578a63abc69" />
 
-•	Gradient vs Position
+# Gradient vs Position
+Shows decreasing magnitude of slope as distance increases
 
-o	Shows decreasing magnitude of slope as distance increases
+<img width="640" height="480" alt="Gradient vs Position" src="https://github.com/user-attachments/assets/dc479010-6433-4b67-a91b-c6f96cbb73fe" />
 
 These graphs visually confirm the numerical findings.
 
