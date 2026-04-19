@@ -6,6 +6,11 @@
 A metal rod is heated at one end. Engineers want to estimate how heat spreads along the rod over time using discrete 
 measurements. 
 
+Computatinal Task
+- Approximate temperature gradient (derivative) 
+- Estimate total heat distribution (integration) 
+- Analyze di usion behavior
+  
 ## Given Data
 
 | Position (cm) | Temperature (°C)  |
