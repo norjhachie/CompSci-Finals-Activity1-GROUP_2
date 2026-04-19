@@ -117,8 +117,6 @@ We also apply the trapezoidal rule on the computed **P(t) values** to verify tha
 
 ## Graphs
 
-The Python script generates two graphs saved as `case_study_5_graphs.png`:
-
 - **Energy vs Time** — shows how total energy consumption grows over the 10-hour period
 - **Power vs Time** — shows instantaneous power at each computed interior point
 
