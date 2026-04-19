@@ -67,16 +67,14 @@ Therefore, heat transfer is fastest near the heated end, particularly around 2 c
 
 2. Does temperature decrease linearly?
 No, the temperature does not decrease linearly.
-If the temperature profile were linear:
-•	The gradient would remain constant
+If the temperature profile were linear: The gradient would remain constant
+
 However, the computed gradients show:
 −8.75→−6.25→−4.25→−2.50
-This clearly indicates:
-•	The slope is changing
-•	The curve is nonlinear
-The temperature profile flattens as distance increases, which is characteristic of diffusion processes.
 
-3. What happens farther from the heat source?
+This clearly indicates: The slope is changing and The curve is nonlinear. The temperature profile flattens as distance increases, which is characteristic of diffusion processes.
+
+4. What happens farther from the heat source?
 As we move farther from the heat source (toward 10 cm), the temperature decreases more gradually, causing the curve to flatten and the magnitude of the gradient to decrease. This indicates that the temperature becomes less sensitive to changes in position and that heat transfer slows down. Such behavior is consistent with diffusion phenomena, where the influence of the heat source weakens as the distance increases.
 
 ## Conclusion
