@@ -1,5 +1,81 @@
 # CompSci-Finals-Activity1-GROUP_2_GULENG-HADJINOR-RICO
 
+# Case 2: Traffic Flow and Velocity Estimation
+
+## Overview
+A traffic monitoring system records the **position of a vehichle every second**. Engineers want to compute the **velocity and total distance travelled**.
+
+## Given Data
+
+| Time (s) | Position (m) |
+|:---:|:---:|
+| 0 | 0 |
+| 1 | 5 |
+| 2 | 15 |
+| 3 | 30 |
+| 4 | 50 |
+| 5 | 75 |
+
+## 1. Velocity Estimation
+Because the dataset provides position at discrete 1-second intervals, we cannot use standard continuous derivatives. Instead, we estimate the instantaneous velocity at time $t$ using the **Central Difference Method**. 
+
+This method calculates velocity by taking the difference in position between the time step immediately after ($t+1$) and the time step immediately before ($t-1$), and dividing by the total time elapsed (2 seconds):
+
+$$v(t) = \frac{x(t+1) - x(t-1)}{2}$$
+
+Applying this to our given data yields the following velocity estimates:
+
+| Time (s) | Estimated Velocity (m/s) |
+| :--- | :--- |
+| 1 | 7.5 |
+| 2 | 12.5 |
+| 3 | 17.5 |
+| 4 | 22.5 |
+
+## 2. Acceleration Insight (Optional Extension)
+To find the acceleration (the rate of change of velocity), we apply the Central Difference Method a second time, this time to the estimated velocity data we just calculated:
+
+$$a(t) = \frac{v(t+1) - v(t-1)}{2}$$
+
+* **At $t=2$:** $(17.5 - 7.5) / 2 = 5$ m/s²
+* **At $t=3$:** $(22.5 - 12.5) / 2 = 5$ m/s²
+
+**Insight:** Because the acceleration calculations yield the exact same result at different time steps, we can conclude that the vehicle is experiencing **uniformly accelerated motion** with a constant acceleration of $5$ m/s². 
+
+## 3. Distance Verification
+To verify our velocity estimates, we calculate the total distance traveled using the **Trapezoidal Rule** to approximate the area under the velocity-time curve between $t=1$ and $t=4$:
+
+$$\text{Distance} \approx \frac{\Delta t}{2} \left[ v(1) + 2v(2) + 2v(3) + v(4) \right]$$
+$$\text{Distance} \approx 0.5 \times \left[ 7.5 + 25 + 35 + 22.5 \right] = 45 \text{ meters}$$
+
+We then compare this to the actual displacement calculated directly from the original position table:
+$$\text{Displacement} = x(4) - x(1) = 50 - 5 = 45 \text{ meters}$$
+
+**Conclusion:** The estimated distance using the Trapezoidal Rule perfectly matches the actual displacement ($45$ meters). This perfect match occurs because the vehicle's acceleration is constant, meaning the velocity increases linearly, resulting in zero estimation error from the trapezoids.
+
+## 4. Visualization
+Here is the graph of the **Position vs Time** and **Velocity vs Time**
+
+<img width="1022" height="400" alt="c2graph" src="https://github.com/user-attachments/assets/c78a90cd-0e4a-435e-afc2-fbeabcd3bbe7" />
+
+
+**Position vs. Time** ($x$ vs. $t$): This graph would look like a curve bending upwards (half of a parabola). The slope gets steeper as time goes on, representing the increasing velocity.
+
+**Velocity vs. Time** ($v$ vs. $t$): If you plot the points (1, 7.5), (2, 12.5), (3, 17.5), and (4, 22.5), they will form a perfectly straight line trending upwards. The constant slope of this line represents the constant acceleration.
+
+## 5. Analysis
+Based on the computations above, we can conclude the following about the vehicle's traffic behavior:
+* **When is the car accelerating?** The car is accelerating continuously throughout the observed timeframe. 
+* **Is motion uniform?** The motion is not uniform (velocity is changing), but the *acceleration* is uniform. 
+* **Identify any anomalies** (sudden jump)** There are no sudden jumps or anomalies in the dataset; the vehicle follows a predictable, mathematical pattern of constant acceleration.
+
+## Conclusion
+
+By applying numerical methods to discrete position data, we successfully reconstructed the vehicle's motion profile. Central Difference calculations revealed that the car's velocity steadily increased from 7.5 m/s to 22.5 m/s, driven by a constant acceleration of 5 m/s². Because this acceleration was uniform, estimating the total distance using the Trapezoidal Rule yielded exactly 45 meters—matching the vehicle's actual displacement with zero mathematical error. Ultimately, this case study proves that numerical techniques can accurately determine speed, acceleration, and distance without needing a continuous mathematical function.
+
+
+
+
 # Case Study 3: Diffusion Process Simulation (Heat Spread)
 
 ## Overview
